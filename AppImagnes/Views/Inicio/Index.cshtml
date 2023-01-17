@@ -1,0 +1,22 @@
+﻿@model List<cImagen>
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="m-0 row justify-content-center">
+    <div class="col-auto mt-5 card bg-secondary text-white col-3" style="width:40rem;">
+        @foreach (cImagen aPart in Model)
+        {
+           if (aPart.actual)
+            {
+
+                <img src="@aPart.srcIm" class="card-img-top" alt="Aqui va la imagen :v">
+                break;
+            }
+        }
+    <div class="card-footer">
+        <button class="btn btn-primary" style="width:49%;">Anterior</button>
+            <button asp-action="Siguiente" asp-controller="Inicio" class="btn btn-primary" style="width:49%;">Siguiente</button>
+    </div>
+</div>
+</div>
