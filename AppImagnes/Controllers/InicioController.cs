@@ -1,20 +1,22 @@
 ﻿using AppImagnes.Models;
+using AppImagnes.Servicios;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AppImagnes.Controllers
 {
     public class InicioController : Controller
     {
+        private readonly IFuncionesCambio cambio;
         private List<cImagen> _inicio;
 
-        public InicioController()
+        public InicioController(IFuncionesCambio cambio)
         {
             _inicio = new List<cImagen>();
             for (int i = 1; i < 10; i++)
             {
-                if (i==1)
+                if (i == 1)
                 {
-                    _inicio.Add(new cImagen() { srcIm = "/imagen/f" + i + ".jpg", actual = true, posicion=i });
+                    _inicio.Add(new cImagen() { srcIm = "/imagen/f" + i + ".jpg", actual = true, posicion = i });
                 }
                 else
                 {
@@ -22,6 +24,7 @@ namespace AppImagnes.Controllers
                 }
             }
 
+            this.cambio = cambio;
         }
 
         public IActionResult Index()
@@ -29,47 +32,15 @@ namespace AppImagnes.Controllers
             return View(_inicio);
         }
         [HttpPost]
-        private IActionResult Siguiente(List<cImagen> list)
+        public IActionResult Index(List<cImagen> list, string ant, string sig, int iman)
         {
-            bool teto = false;
-            int ultimo = 0;
+            list = _inicio;
             cImagen aux = new cImagen();
-
-            foreach (cImagen item in list)
-            {
-                if (teto) 
-                {
-                    item.actual = true;
-                    teto = false;
-                    aux.actual = false;
-                    break;
-                }
-                if (item.actual && item.posicion != 9) 
-                {
-                    aux = item;
-                    teto = true;
-                    ultimo = item.posicion;
-                    
-                }
-                else if (item.posicion == 9)
-                {
-                    ultimo = 9;
-                    break;
-                }
-            }
-
-            if (ultimo == 9) 
-            {
-                foreach (cImagen item in list)
-                {
-                    if (item.posicion == 1)
-                    {
-                        item.actual = true;
-                        break;
-                    }
-                
-                }
-            } 
+            Console.WriteLine(ant);
+            Console.WriteLine(sig);
+            Console.WriteLine(iman);
+            if (sig != null) { cambio.Siguiente(list, iman); }
+            else if (ant != null){ cambio.Anterior(list, iman); }
             return View(list);
         }
     }
