@@ -1,0 +1,7 @@
+C:\Users\josed\Documents\GitHub\MVC.github.io\AppImagnes\obj\Release\net6.0\PubTmp\Out\AppImagnes.exe
+C:\Users\josed\Documents\GitHub\MVC.github.io\AppImagnes\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\josed\Documents\GitHub\MVC.github.io\AppImagnes\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\josed\Documents\GitHub\MVC.github.io\AppImagnes\obj\Release\net6.0\PubTmp\Out\AppImagnes.dll
+C:\Users\josed\Documents\GitHub\MVC.github.io\AppImagnes\obj\Release\net6.0\PubTmp\Out\AppImagnes.deps.json
+C:\Users\josed\Documents\GitHub\MVC.github.io\AppImagnes\obj\Release\net6.0\PubTmp\Out\AppImagnes.runtimeconfig.json
+C:\Users\josed\Documents\GitHub\MVC.github.io\AppImagnes\obj\Release\net6.0\PubTmp\Out\AppImagnes.pdb

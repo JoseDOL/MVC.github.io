@@ -36,9 +36,6 @@ namespace AppImagnes.Controllers
         {
             list = _inicio;
             cImagen aux = new cImagen();
-            Console.WriteLine(ant);
-            Console.WriteLine(sig);
-            Console.WriteLine(iman);
             if (sig != null) { cambio.Siguiente(list, iman); }
             else if (ant != null){ cambio.Anterior(list, iman); }
             return View(list);
