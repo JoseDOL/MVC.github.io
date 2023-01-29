@@ -1,0 +1,70 @@
+﻿@model IEnumerable<EUsusario>;
+@{
+    ViewData["Title"] = "Eliminar";
+}
+<div class="m-0 row justify-content-center align-items-center">
+    <div class="col-auto text-center">
+        <h1 class="bi bi-trash3">Eliminar</h1>
+    </div>
+</div>
+
+<div class="m-0 row justify-content-center align-items-center ">
+    <div class="card col-auto bg-secondary bg-gradient " style="width: 75rem;">
+        <table class="table text-white" id="elim">
+            <thead>
+                <tr>
+                    <th scope="col">DPI</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Fecha de Nacimiento</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Profesion</th>
+                    <th scope="col">Nacionalidad</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Ususario activo</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+
+
+                    <tr data-selected="0">
+                        <td>@item.dpi</td>
+                        <td>@item.Nombre</td>
+                        <td>@item.Apellido</td>
+                        <td>@item.FechNac.ToString("dd-MM-yyyy")</td>
+                        <td>@item.edad</td>
+                        <td>@item.profesion</td>
+                        <td>@item.nacionalidad</td>
+                        <td>@item.telefono</td>
+                        @if (@item.sn_activo == 1)
+                        {
+                            <td>
+                                Activo
+                            </td>
+
+                        }
+                        else
+                        {
+                            <td>
+                                No activo
+                            </td>
+                        }
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+        <div class="m-0 row justify-content-center align-items-center">
+            <button id="copy" class="btn btn-primary col-auto">Eliminar</button>
+        </div>
+    </div>
+
+</div>
+
+    @section Scripts{
+        <script src="~/js/eliminar.js" asp-append-version="true"></script>
+
+    }
