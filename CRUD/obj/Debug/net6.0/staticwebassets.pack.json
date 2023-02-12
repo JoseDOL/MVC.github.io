@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\josed\\Documents\\GitHub\\MVC.github.io\\CRUD\\wwwroot\\js\\Activar.js",
+      "PackagePath": "staticwebassets\\js\\Activar.js"
+    },
+    {
+      "Id": "C:\\Users\\josed\\Documents\\GitHub\\MVC.github.io\\CRUD\\wwwroot\\js\\Desactivar.js",
+      "PackagePath": "staticwebassets\\js\\Desactivar.js"
+    },
+    {
+      "Id": "C:\\Users\\josed\\Documents\\GitHub\\MVC.github.io\\CRUD\\wwwroot\\js\\Modificar.js",
+      "PackagePath": "staticwebassets\\js\\Modificar.js"
+    },
+    {
       "Id": "C:\\Users\\josed\\Documents\\GitHub\\MVC.github.io\\CRUD\\wwwroot\\js\\carga.js",
       "PackagePath": "staticwebassets\\js\\carga.js"
     },
@@ -91,6 +103,22 @@
     {
       "Id": "C:\\Users\\josed\\Documents\\GitHub\\MVC.github.io\\CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josed\\Documents\\GitHub\\MVC.github.io\\CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\josed\\Documents\\GitHub\\MVC.github.io\\CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\josed\\Documents\\GitHub\\MVC.github.io\\CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\josed\\Documents\\GitHub\\MVC.github.io\\CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
     },
     {
       "Id": "C:\\Users\\josed\\Documents\\GitHub\\MVC.github.io\\CRUD\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",

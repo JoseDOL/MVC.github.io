@@ -1,0 +1,77 @@
+﻿@model EUsuario
+@{
+    ViewData["Title"] = "Usuario a Modificar";
+}
+<div class="m-0 row justify-content-center align-items-center">
+    <div class="col-auto text-center">
+        <h1 class="bi bi-clipboard2-plus-fill">Datos para Actualizar </h1>
+    </div>
+</div>
+
+<div class="m-0 row justify-content-center align-items-center ">
+    <div class="card col-auto bg-secondary bg-gradient " style="width: 60rem;">
+        <form class="card-body" asp-action="ModificarEp">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <div class="mb-3">
+                <label asp-for="dpi" class="form-label"></label>
+                <input type="number" asp-for="dpi" class="form-control" autocomplete="off" readonly />
+                <span asp-validation-for="dpi" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Nombre" class="form-label"></label>
+                <input type="text" asp-for="Nombre" class="form-control" autocomplete="off" />
+                <span asp-validation-for="Nombre" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Apellido" class="form-label"></label>
+                <input autocomplete="off" type="text" asp-for="Apellido" class="form-control" />
+                <span asp-validation-for="Apellido" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="FechNac" class="form-label"></label>
+                <input id="fecha1" class="form-control" type="date" asp-for="FechNac" onchange="setEdad()" />
+                <span asp-validation-for="FechNac" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="edad" class="form-label"></label>
+                <input id="edad2" type="text" asp-for="edad" class="form-control" autocomplete="off" />
+                <span asp-validation-for="edad" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="profesion" class="form-label"></label>
+                <input type="text" asp-for="profesion" class="form-control" autocomplete="off" />
+                <span asp-validation-for="profesion" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="nacionalidad" class="form-label"></label>
+                <input type="text" asp-for="nacionalidad" class="form-control" autocomplete="off" />
+                <span asp-validation-for="nacionalidad" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="telefono" class="form-label"></label>
+                <input type="number" asp-for="telefono" class="form-control" autocomplete="off" />
+                <span asp-validation-for="telefono" class="text-danger"></span>
+            </div>
+            <div class="mb-3" style="display:none;">
+                <label asp-for="sn_activo" class="form-label"></label>
+                <input type="number" asp-for="sn_activo" class="form-control" autocomplete="off" />
+                <span asp-validation-for="sn_activo" class="text-danger"></span>
+            </div>
+            <div class=" mb-3 row justify-content-center align-items-center " style="width:100%;">
+                <button id="btn-crear" type="submit" class="btn btn-primary col-auto" style="width:30%;">Actualizar</button>
+            </div>
+
+            <div class=" mb-3 row justify-content-center align-items-center " style="width:100%;">
+                <a id="btn-crear"  class="btn btn-dark col-auto" style="width:30%;" asp-action="Modificar"> Cancelar </a>
+            </div>
+
+        </form>
+    </div>
+    <partial name="~/Views/Shared/_carga.cshtml" />
+</div>
+
+@section Scripts {
+
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/Modificar.js" asp-append-version="true"></script>
+}
