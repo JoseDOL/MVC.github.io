@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Vz46fLmtybBEGFh0Wgt7HvKGSAFd0Z5fTD1VORIvFSndTVhjFUjYEE6gQIUtQTb0xBJTqS+j6KOkLt0ykVt3Pw==",
+  "success": true,
+  "projectFilePath": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\CrudPro.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JOSE-1\\.nuget\\packages\\dapper\\2.1.15\\dapper.2.1.15.nupkg.sha512"
+  ],
+  "logs": []
+}
