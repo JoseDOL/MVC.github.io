@@ -6,7 +6,7 @@ BEGIN
 		txt_nombre VARCHAR(250),
 		controller VARCHAR(250),
 		accion VARCHAR(250),
-		icono VARCHAR(250),
+		icono VARCHAR(250)
 	)
 END
 GO

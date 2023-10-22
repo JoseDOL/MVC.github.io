@@ -33,7 +33,29 @@ namespace CrudPro.Controllers
 
         }
 
-        public IActionResult Privacy()
+        public ActionResult addData()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult addData(Persona persona)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(persona);
+            }
+            return View();
+        }
+        public ActionResult readData()
+        {
+            return View();
+        }
+        public ActionResult updateData()
+        {
+            return View();
+        }
+        public ActionResult deleteData()
         {
             return View();
         }

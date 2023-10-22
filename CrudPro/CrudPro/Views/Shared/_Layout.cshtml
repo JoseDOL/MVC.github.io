@@ -20,8 +20,10 @@
     <header>
         <div class="container-fluid">
             <div class="collapse lado-izquierdo bg-dark p-4" id="navbarToggleExternalContent">
-                <div class="nombre-empresa ">
-                    <h2 class="bi bi-database"> CRUD</h2>
+                <div class="nombre-empresa">
+                    <a class="nombre-empresa" asp-area="" asp-controller="Home" asp-action="Index">
+                        <h2 class="bi bi-database">CRUD</h2>
+                    </a>
                 </div>
                 <ul class="menu">
                     @foreach (var menuItem in menuItems)

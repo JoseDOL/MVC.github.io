@@ -1,3 +1,6 @@
+a {
+    text-decoration: none !important; /* Quitar subrayado con !important */
+}
 
 body {
     background: rgb(141,141,141);

@@ -10,6 +10,15 @@ BEGIN
 END
 
 SELECT @id_nav = ISNULL(MAX(id_nav), 0) + 1 FROM menu_nav_bar
+SET @txt_nombre = 'LEER REGISTRO'
+
+IF NOT EXISTS (SELECT 1 FROM menu_nav_bar WHERE txt_nombre = @txt_nombre)
+BEGIN
+	INSERT INTO dbo.menu_nav_bar (id_nav, txt_nombre, controller, accion, icono)
+    VALUES (@id_nav, @txt_nombre, 'Home', 'readData', 'bi bi-database-check')
+END
+
+SELECT @id_nav = ISNULL(MAX(id_nav), 0) + 1 FROM menu_nav_bar
 SET @txt_nombre = 'MODIFICAR REGISTRO'
 
 IF NOT EXISTS (SELECT 1 FROM menu_nav_bar WHERE txt_nombre = @txt_nombre)
@@ -28,6 +37,7 @@ BEGIN
 END
 
 GO
+
 
 
 

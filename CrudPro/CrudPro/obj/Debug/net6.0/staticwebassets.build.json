@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Wev1w+oa0hKJEmq1b9MNLJwzQbkzyOzBw4m/zDZ0T20=",
+  "Hash": "Y+HUvRLlVHSYgTlCHYl4BpoShhKrw/Rytk258GHa+U4=",
   "Source": "CrudPro",
   "BasePath": "_content/CrudPro",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\js\\vistas\\addData.js",
+      "SourceId": "CrudPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\",
+      "BasePath": "_content/CrudPro",
+      "RelativePath": "js/vistas/addData.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vistas\\addData.js"
     },
     {
       "Identity": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

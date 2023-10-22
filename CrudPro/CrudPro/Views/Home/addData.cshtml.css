@@ -1,0 +1,25 @@
+﻿.neon-border {
+    border: 2px solid #00f0f0; /* Color del borde de neón */
+    border-radius: 10px; /* Radio del borde de la tarjeta */
+    box-shadow: 0 0 10px #00f0f0, 0 0 20px #00f0f0, 0 0 30px #00f0f0; /* Efecto de neón */
+    transition: all 0.3s ease; /* Transición suave para el efecto de neón */
+}
+
+    .neon-border:hover {
+        box-shadow: 0 0 5px #00f0f0, 0 0 10px #00f0f0, 0 0 15px #00f0f0; /* Efecto de neón al pasar el mouse */
+    }
+
+.neon-input {
+    border: 2px solid #ABF084; /* Color del borde de neón */
+    border-radius: 5px; /* Radio de las esquinas */
+    padding: 5px;
+    background: rgba(0, 240, 240, 0.1); /* Fondo de neón */
+    box-shadow: 0 0 10px rgba(0, 240, 240, 0.3); /* Sombra de neón */
+    transition: all 0.3s ease; /* Transición suave para el efecto de neón */
+}
+
+    .neon-input:focus {
+        outline: none;
+        box-shadow: 0 0 15px rgba(0, 240, 240, 0.6); /* Efecto de neón al enfocar el campo */
+    }
+

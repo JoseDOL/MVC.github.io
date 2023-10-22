@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\js\\vistas\\addData.js",
+      "PackagePath": "staticwebassets\\js\\vistas\\addData.js"
+    },
+    {
       "Id": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
