@@ -1,4 +1,10 @@
-﻿<!DOCTYPE html>
+﻿@using CrudPro.Servicios;
+@inject IServicioConexion servicioConexion
+@{
+    var menuItems = servicioConexion.ObtenerNav().Result;
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -18,10 +24,10 @@
                     <h2 class="bi bi-database"> CRUD</h2>
                 </div>
                 <ul class="menu">
-                    <li class="active "><a class="bi bi-1-circle-fill " href="#"> Opción 1</a></li>
-                    <li><a href="#">Opción 2</a></li>
-                    <li><a href="#">Opción 3</a></li>
-                    <!-- Agrega más elementos de menú según sea necesario -->
+                    @foreach (var menuItem in menuItems)
+                    {
+                        <li><a class="@menuItem.icon " asp-area="" asp-controller="@menuItem.controller" asp-action="@menuItem.action"> @menuItem.name</a></li>
+                    }
                 </ul>
             </div>
             <nav class="navbar navbar-dark">
