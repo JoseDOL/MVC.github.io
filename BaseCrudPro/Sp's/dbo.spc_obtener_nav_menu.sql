@@ -7,11 +7,11 @@ GO
 CREATE PROCEDURE dbo.spc_obtener_nav_menu
 AS
 BEGIN
-	SELECT id_nav,
-		txt_nombre,
-		controller,
-		accion,
-		icono
+	SELECT id_nav AS 'id',
+		txt_nombre AS 'name',
+		controller AS 'controller',
+		accion AS 'action',
+		icono AS 'icon'
 	FROM menu_nav_bar
 END
 RETURN 0 
