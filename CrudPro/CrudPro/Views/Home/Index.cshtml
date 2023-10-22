@@ -1,8 +1,39 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model CrudPro.Models.GiphyData // Asegúrate de que el espacio de nombres y el nombre de la clase coincidan con tu proyecto
+@{
+    ViewData["Title"] = "Bienvenida";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Bienvenido a este programa </h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <h1> CRUD </h1>
+    <p>
+        El concepto CRUD está estrechamente vinculado a la gestión de datos digitales.
+        <br>
+        CRUD hace referencia a un acrónimo en el que se reúnen las primeras letras
+        <br>
+        de las cuatro operaciones fundamentales de aplicaciones persistentes en sistemas de bases de datos:
+
+        <ul>
+            <li>Create (Crear registros)</li>
+            <li>Read bzw. Retrieve (Leer registros)</li>
+            <li>Update (Actualizar registros)</li>
+            <li>Delete bzw. Destroy (Borrar registros)</li>
+        </ul>
+        <br>
+        <br>
+        <br>
+    </p>
 </div>
+@if (Model != null && Model.data != null && Model.data.Any())
+{
+    <div id="gif-container">
+        @{
+            var random = new Random();
+            var randomGif = Model.data[random.Next(Model.data.Count)];
+        }
+        <img src="@randomGif.images.fixed_height.url" alt="@randomGif.title" style="display:block; margin:auto;" />
+    </div>
+}
+else
+{
+    <p>No se encontraron GIFs.</p>
+}

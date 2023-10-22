@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IServicioConexion, ServicioConexion>();
+builder.Services.AddLocalization(options => options.ResourcesPath = "Resources");
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

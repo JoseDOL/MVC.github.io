@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" asp-append-version="true">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" asp-append-version="true">
 </head>
-<body class="p-3 mb-2 bg-secondary text-white">
+<body class="text-white">
     <header>
         <div class="container-fluid">
             <div class="collapse lado-izquierdo bg-dark p-4" id="navbarToggleExternalContent">
@@ -29,6 +29,13 @@
                         <li><a class="@menuItem.icon " asp-area="" asp-controller="@menuItem.controller" asp-action="@menuItem.action"> @menuItem.name</a></li>
                     }
                 </ul>
+                <footer class="footer">
+                    <p>
+                        Jose David Ordoñez Lima 
+                        <br />
+                        &copy; 2023 - CRUD
+                    </p>
+                 </footer>
             </div>
             <nav class="navbar navbar-dark">
                 <button class="navbar-toggler btn-dark" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,11 +55,7 @@
     </div>
    
   
-    <footer class=" footer text-muted">
-        <div class="container">
-            &copy; 2023 - CRUD - Jose David Ordoñez Lima
-        </div>
-    </footer>
+
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

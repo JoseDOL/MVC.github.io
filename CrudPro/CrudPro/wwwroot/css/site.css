@@ -1,3 +1,12 @@
+
+body {
+    background: rgb(141,141,141);
+    background: -moz-radial-gradient(circle, rgba(141,141,141,1) 0%, rgba(106,99,99,0.7959558823529411) 45%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(141,141,141,1) 0%, rgba(106,99,99,0.7959558823529411) 45%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(141,141,141,1) 0%, rgba(106,99,99,0.7959558823529411) 45%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8d8d8d",endColorstr="#000000",GradientType=1);
+}
+
 .container-fluid {
     display: flex;
     justify-content: space-between;
@@ -68,4 +77,11 @@
     color: #fff; /* Cambia el color del texto al blanco para mayor contraste */
     border: none; /* Elimina el borde si lo deseas */
     /* Agrega más estilos según sea necesario */
+}
+p {
+    line-height: 1; /* Cambia el valor según tus preferencias */
+}
+
+#gif-container {
+    text-align: center;
 }
