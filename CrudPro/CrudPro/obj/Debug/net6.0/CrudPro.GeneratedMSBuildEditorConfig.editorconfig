@@ -16,16 +16,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\GitHub\MVC.github.io\CrudPro\CrudPro
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/GitHub/MVC.github.io/CrudPro/CrudPro/Views/Home/deleteData.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkZWxldGVEYXRhLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/GitHub/MVC.github.io/CrudPro/CrudPro/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/GitHub/MVC.github.io/CrudPro/CrudPro/Views/Home/readData.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWFkRGF0YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/GitHub/MVC.github.io/CrudPro/CrudPro/Views/Home/updateData.cshtml]
@@ -51,6 +43,18 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/GitHub/MVC.github.io/CrudPro/CrudPro/Views/Home/addData.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxhZGREYXRhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = b-2wcmwa5ezw
+
+[D:/GitHub/MVC.github.io/CrudPro/CrudPro/Views/Home/deleteData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkZWxldGVEYXRhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-mux88jhzam
+
+[D:/GitHub/MVC.github.io/CrudPro/CrudPro/Views/Home/readData.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWFkRGF0YS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-5xjfs9k81z
+
+[D:/GitHub/MVC.github.io/CrudPro/CrudPro/Views/Shared/_Cargando.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DYXJnYW5kby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-ymdme1wcuz
 
 [D:/GitHub/MVC.github.io/CrudPro/CrudPro/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s

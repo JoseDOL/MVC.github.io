@@ -11,10 +11,12 @@ namespace CrudPro.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly GiphyService giphyService;
         private string apiKey = "UeBIgmYzAAAGOMS46p6BuaCQebasYCND";
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IServicioConexion servicioConexion;
+        public HomeController(ILogger<HomeController> logger, IServicioConexion servicioConexion)
         {
             _logger = logger;
             this.giphyService = new GiphyService(apiKey);
+            this.servicioConexion = servicioConexion;
         }
 
         public async Task<ActionResult> Index()
@@ -39,17 +41,28 @@ namespace CrudPro.Controllers
         }
 
         [HttpPost]
-        public ActionResult addData(Persona persona)
+        public async Task<IActionResult> addData(Persona persona)
         {
             if (!ModelState.IsValid)
             {
                 return View(persona);
             }
-            return View();
+            var result = await servicioConexion.Crear(persona);
+            if (result == 0 || result == -2)
+            {
+                
+                ModelState.AddModelError(nameof(persona.dpi),
+                    result == -2 ? $"El DPI No.  {persona.dpi} ya existe.": $"Error al Insertar Registro.");
+
+                return View(persona);
+            }
+            return RedirectToAction("Index");
         }
-        public ActionResult readData()
+
+        public async Task<IActionResult> readData()
         {
-            return View();
+            var eusuario = await servicioConexion.EObetener();
+            return View(eusuario);
         }
         public ActionResult updateData()
         {
@@ -58,6 +71,32 @@ namespace CrudPro.Controllers
         public ActionResult deleteData()
         {
             return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> deleteData(PersonId personId)
+        {
+
+            if (!ModelState.IsValid)
+            {
+                return View(personId);
+            }
+            
+            var existe = await servicioConexion.verificaPersona(personId.dpi,0);
+
+            if (existe == 0)
+            {
+                ModelState.AddModelError(nameof(personId.dpi),
+                    $"El DPI No.  {personId.dpi} no existe.");
+
+                return View(personId);
+            }
+            var eliminacion = await servicioConexion.Eliminar(personId);
+            if (eliminacion == 0) {
+                ModelState.AddModelError(nameof(personId.dpi),
+                    $"Error al eliminar DPI No.  {personId.dpi}.");
+                return View(personId); 
+            }
+            return RedirectToAction("Index");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

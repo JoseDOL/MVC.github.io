@@ -17,8 +17,24 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\js\\vistas\\Cargando.js",
+      "PackagePath": "staticwebassets\\js\\vistas\\Cargando.js"
+    },
+    {
+      "Id": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\js\\vistas\\Paginacion.js",
+      "PackagePath": "staticwebassets\\js\\vistas\\Paginacion.js"
+    },
+    {
       "Id": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\js\\vistas\\addData.js",
       "PackagePath": "staticwebassets\\js\\vistas\\addData.js"
+    },
+    {
+      "Id": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\js\\vistas\\deleteData.js",
+      "PackagePath": "staticwebassets\\js\\vistas\\deleteData.js"
+    },
+    {
+      "Id": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\js\\vistas\\readData.js",
+      "PackagePath": "staticwebassets\\js\\vistas\\readData.js"
     },
     {
       "Id": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\lib\\bootstrap\\LICENSE",

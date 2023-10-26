@@ -1,5 +1,29 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model CrudPro.Models.PersonId
 @{
+    ViewData["Title"] = "ELIMINAR REGISTRO";
+}
+<div class="d-flex align-items-start justify-content-center" style="min-height: 100vh;" id="idCard">
+    <div class="card neon-border text-center" style="width: 35rem;">
+        <div class="card-header bg-secondary rounded">
+            <h5 class="card-title"> CREAR ELIMINAR </h5>
+        </div>
+        <div class="card-body bg-secondary rounded">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <form id="deleteForm" asp-action="deleteData">
+                <div class="form-group">
+                    <label asp-for="dpi" class="form-label"></label>
+                    <i class="bi bi-person"></i>
+                    <input type="number" asp-for="dpi" class="form-control neon-input" id="dpi" name="dpi" autocomplete="off">
+                    <span asp-validation-for="dpi" class="text-danger"></span>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary" id="btnEliminar">ELIMINAR</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+
+    <script src="~/js/vistas/deleteData.js" asp-append-version="true"></script>
 }
