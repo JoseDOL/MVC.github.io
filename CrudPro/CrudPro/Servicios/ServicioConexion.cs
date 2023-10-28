@@ -11,6 +11,7 @@ namespace CrudPro.Servicios
         Task<int> Eliminar(PersonId personId);
         Task<int> verificaPersona(string dpi, int opcion = 1);
         Task<Persona> buscarPersona(string dpi, int opcion = 1);
+        Task<int> Update(Persona persona);
 
     }
     public class ServicioConexion : IServicioConexion
@@ -87,6 +88,23 @@ namespace CrudPro.Servicios
                                                             }, commandType: System.Data.CommandType.StoredProcedure);
 
             return persona;
+        }
+
+        public async Task<int> Update(Persona persona)
+        {
+            using var connection = new SqlConnection(cadenaConexion);
+            var id = await connection.QuerySingleAsync<int>("spu_persona",
+                                                            new
+                                                            {
+                                                                persona.dpi,
+                                                                persona.Nombre,
+                                                                persona.Apellido,
+                                                                persona.Profesion,
+                                                                persona.FechaNacimiento,
+                                                                persona.Edad,
+                                                                persona.Telefono
+                                                            }, commandType: System.Data.CommandType.StoredProcedure);
+            return id;
         }
     }
 }

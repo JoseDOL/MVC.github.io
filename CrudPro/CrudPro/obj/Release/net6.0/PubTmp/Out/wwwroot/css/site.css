@@ -1,0 +1,95 @@
+a {
+    text-decoration: none !important; /* Quitar subrayado con !important */
+}
+
+body {
+    background: rgb(141,141,141);
+    background: -moz-radial-gradient(circle, rgba(141,141,141,1) 0%, rgba(106,99,99,0.7959558823529411) 45%, rgba(0,0,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(141,141,141,1) 0%, rgba(106,99,99,0.7959558823529411) 45%, rgba(0,0,0,1) 100%);
+    background: radial-gradient(circle, rgba(141,141,141,1) 0%, rgba(106,99,99,0.7959558823529411) 45%, rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#8d8d8d",endColorstr="#000000",GradientType=1);
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden; /* Evitar que el contenido de lado-izquierdo se muestre al principio */
+}
+
+.lado-izquierdo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 0; /* Inicialmente oculto */
+    overflow: hidden; /* Para ocultar el contenido */
+    border-top-right-radius: 15px; /* Redondear la esquina superior derecha */
+    border-bottom-right-radius: 15px; /* Redondear la esquina inferior derecha */
+    transition: width 0.5s ease-in-out;
+}
+
+    .lado-izquierdo.expandir {
+        width: 14%; /* Ancho cuando se expande */
+    }
+
+.navbar {
+    flex: 1; /* El navbar ocupa el espacio restante */
+    margin-left: 0; /* Ajuste inicial */
+    transition: margin-left 0.3s; /* Agregar una animación de transición */
+}
+
+    .navbar.expandir-nav {
+        margin-left: 250px; /* Mover el navbar hacia la derecha */
+    }
+
+.navbar-toggler {
+    cursor: pointer;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 10px;
+}
+.menu li.active {
+    background-color: #007bff; /* Cambia el color de fondo al azul (puedes personalizarlo) */
+    color: #fff; /* Cambia el color del texto al blanco (puedes personalizarlo) */
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff; /* Color del texto */
+    display: block;
+}
+
+.nombre-empresa {
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.nombre-empresa h2 {
+    margin: 0;
+}
+
+.btn-dark {
+    background-color: #343a40; /* Cambia el color de fondo al oscuro */
+    /* Puedes personalizar otros estilos según tus preferencias */
+    color: #fff; /* Cambia el color del texto al blanco para mayor contraste */
+    border: none; /* Elimina el borde si lo deseas */
+    /* Agrega más estilos según sea necesario */
+}
+p {
+    line-height: 1; /* Cambia el valor según tus preferencias */
+}
+
+#gif-container {
+    text-align: center;
+}
+
+.swal2-container {
+    background-color: #333; /* Color de fondo oscuro */
+    color: #fff; /* Color de texto claro */
+}

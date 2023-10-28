@@ -1,0 +1,64 @@
+
+.cargando[b-ymdme1wcuz] {
+    position: relative;
+    color: #5BFF00;
+    margin-top: 2em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase
+}
+
+.contenedor-loader[b-ymdme1wcuz] {
+    height: 6em;
+}
+
+#contenedor[b-ymdme1wcuz] {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    color: #000;
+}
+
+.loader[b-ymdme1wcuz],
+.loader[b-ymdme1wcuz]:before,
+.loader[b-ymdme1wcuz]:after {
+    background: #5BFF00;
+    animation: cargando-b-ymdme1wcuz 1s infinite ease-in-out;
+    width: 1em;
+    height: 4em;
+}
+
+    .loader[b-ymdme1wcuz]:before,
+    .loader[b-ymdme1wcuz]:after {
+        position: absolute;
+        top: 0;
+        content: '';
+    }
+
+    .loader[b-ymdme1wcuz]:before {
+        left: -1.5em;
+    }
+
+.loader[b-ymdme1wcuz] {
+    text-indent: -9999em;
+    margin: 40% auto;
+    position: relative;
+    font-size: 11px;
+    animation-delay: 0.16s;
+}
+
+    .loader[b-ymdme1wcuz]:after {
+        left: 1.5em;
+        animation-delay: 0.32s;
+    }
+
+@keyframes cargando-b-ymdme1wcuz {
+    0%, 80%, 100% {
+        box-shadow: 0 0 #5BFF00;
+        height: 4em;
+    }
+
+    40% {
+        box-shadow: 0 -2em #5BFF00;
+        height: 5em;
+    }
+}

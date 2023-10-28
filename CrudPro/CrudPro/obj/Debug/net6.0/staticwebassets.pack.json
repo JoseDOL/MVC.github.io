@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\js\\vistas\\deleteData.js"
     },
     {
+      "Id": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\js\\vistas\\modificarP.js",
+      "PackagePath": "staticwebassets\\js\\vistas\\modificarP.js"
+    },
+    {
       "Id": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\js\\vistas\\readData.js",
       "PackagePath": "staticwebassets\\js\\vistas\\readData.js"
     },

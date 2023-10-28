@@ -70,3 +70,4 @@ D:\GitHub\MVC.github.io\CrudPro\CrudPro\obj\Debug\net6.0\scopedcss\Views\Home\ad
 D:\GitHub\MVC.github.io\CrudPro\CrudPro\obj\Debug\net6.0\scopedcss\Views\Home\readData.cshtml.rz.scp.css
 D:\GitHub\MVC.github.io\CrudPro\CrudPro\obj\Debug\net6.0\scopedcss\Views\Shared\_Cargando.cshtml.rz.scp.css
 D:\GitHub\MVC.github.io\CrudPro\CrudPro\obj\Debug\net6.0\scopedcss\Views\Home\deleteData.cshtml.rz.scp.css
+D:\GitHub\MVC.github.io\CrudPro\CrudPro\obj\Debug\net6.0\scopedcss\Views\Home\modificarP.cshtml.rz.scp.css

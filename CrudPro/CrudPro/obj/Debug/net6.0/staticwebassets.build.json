@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NmJIbI+26+tOKU4mB4sgF/kBaZygdl5FLXcawh+KMsk=",
+  "Hash": "y5fKs+Zd3pWvhlfuITXlmWpKkBmiRSnhkJiCHJ2ShtY=",
   "Source": "CrudPro",
   "BasePath": "_content/CrudPro",
   "Mode": "Default",
@@ -151,6 +151,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\vistas\\deleteData.js"
+    },
+    {
+      "Identity": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\js\\vistas\\modificarP.js",
+      "SourceId": "CrudPro",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\",
+      "BasePath": "_content/CrudPro",
+      "RelativePath": "js/vistas/modificarP.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\vistas\\modificarP.js"
     },
     {
       "Identity": "D:\\GitHub\\MVC.github.io\\CrudPro\\CrudPro\\wwwroot\\js\\vistas\\Paginacion.js",

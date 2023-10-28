@@ -1,0 +1,64 @@
+﻿@model CrudPro.Models.Persona
+@{
+    ViewData["Title"] = "MODIFICAR REGISTRO";
+}
+<partial name="~/Views/Shared/_Cargando.cshtml" />
+<div class="d-flex align-items-start justify-content-center" style="min-height: 100vh;" id="idCard">
+    <div class="card neon-border text-center" style="width: 35rem;">
+        <div class="card-header bg-secondary rounded">
+            <h5 class="card-title"> CREAR REGISTRO </h5>
+        </div>
+        <div class="card-body bg-secondary rounded">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+            <form id="formUpdate" asp-action="modificarPp">
+                <div class="form-group">
+                    <label asp-for="dpi" class="form-label"></label>
+                    <i class="bi bi-person"></i>
+                    <input type="number" asp-for="dpi" class="form-control neon-input" id="dpi" name="dpi" autocomplete="off" readonly >
+                    <span asp-validation-for="dpi" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Nombre" class="form-label"></label>
+                    <i class="bi bi-person"></i>
+                    <input type="text" asp-for="Nombre" class="form-control neon-input" id="Nombre" name="Nombre" autocomplete="off">
+                    <span asp-validation-for="Nombre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Apellido"></label> <i class="bi bi-person"></i>
+                    <input type="text" asp-for="Apellido" class="form-control neon-input" id="Apellido" name="Apellido" autocomplete="off">
+                    <span asp-validation-for="Apellido" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Profesion"></label> <i class="bi bi-pencil"></i>
+                    <input type="text" asp-for="Profesion" class="form-control neon-input" id="profesion" name="profesion" autocomplete="off" >
+                    <span asp-validation-for="Profesion" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FechaNacimiento"></label> <i class="bi bi-calendar"></i>
+                    @{
+                        string formattedDate = Model.FechaNacimiento.ToString("yyyy-MM-dd");
+                    }
+                    <input type="date" asp-for="FechaNacimiento" class="form-control neon-input" id="FechaNacimiento" name="FechaNacimiento" value="@formattedDate">
+                    <span asp-validation-for="FechaNacimiento" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Edad"></label> <i class="bi bi-person"></i>
+                    <input type="text" asp-for="Edad" class="form-control neon-input" id="Edad" name="Edad" autocomplete="off" readonly>
+                    <span asp-validation-for="Edad" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Telefono"></label> <i class="bi bi-telephone"></i>
+                    <input type="number" asp-for="Telefono" class="form-control neon-input" id="telefono" name="telefono" autocomplete="off">
+                    <span asp-validation-for="Edad" class="text-danger"></span>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-primary" id="btnActualizar">ACTUALIZAR</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+
+    <script src="~/js/vistas/modificarP.js" asp-append-version="true"></script>
+}

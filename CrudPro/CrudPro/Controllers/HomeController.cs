@@ -68,6 +68,41 @@ namespace CrudPro.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public async Task<IActionResult> updateData(PersonId personId)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(personId);
+            }
+            var existe = await servicioConexion.verificaPersona(personId.dpi, 0);
+
+            if (existe == 0)
+            {
+                ModelState.AddModelError(nameof(personId.dpi),
+                    $"El DPI No.  {personId.dpi} no existe.");
+
+                return View(personId);
+            }
+            var personaAux =  await servicioConexion.buscarPersona(personId.dpi,1);
+            
+            return RedirectToAction("modificarP",personaAux);
+        }
+        public ActionResult modificarP(Persona persona)
+        {
+            return View(persona);
+        }
+        [HttpPost]
+        public async Task<IActionResult> modificarPp(Persona persona)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("modificarP", persona);
+            }
+            var result = await servicioConexion.Update(persona);
+            if (result == 0) { return RedirectToAction("updateData"); }
+            return RedirectToAction("Index");
+        }
         public ActionResult deleteData()
         {
             return View();
